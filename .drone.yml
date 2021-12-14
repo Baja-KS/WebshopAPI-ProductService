@@ -18,7 +18,6 @@ steps:
   image:  plugins/docker
   settings:
     repo: bajaks/webshop-api-microservices.product-service
-    #dockerfile: Dockerfile-arm
     username:
       from_secret:  dockerhub_username 
     password:
@@ -93,6 +92,4 @@ steps:
         from_secret:  dockerhub_username 
       password:
         from_secret:  dockerhub_pass
-        #tags:
-        #  - v1.0
       tags: ${DRONE_BUILD_NUMBER}-amd64

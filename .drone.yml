@@ -63,7 +63,7 @@ steps:
     - cd WebshopAPI-helm
     - git add product/values.yaml
     - git commit -m "Change image version to ${DRONE_BUILD_NUMBER}"
-    - git push origin master --force
+    - git push origin master 
 
 
 ---

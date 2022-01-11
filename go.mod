@@ -1,4 +1,4 @@
-module ProductService
+module github.com/Baja-KS/WebshopAPI-ProductService
 
 go 1.16
 
